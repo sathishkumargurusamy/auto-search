@@ -45,7 +45,7 @@ export default function App() {
       <h1>Search!</h1>
       <Input onChange={(e) => onChange(e.target.value)} />
       {result.map((e) => {
-        return <p>{e.title}</p>;
+        return <p>{e.title.toUpperCase()}</p>;
       })}
     </Container>
   );
